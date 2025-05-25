@@ -1,0 +1,17 @@
+<modification>
+    <name>OpenCart Modern Default Theme</name>
+    <code>modern_default_theme</code>
+    <version>1.0.0</version>
+    <author>Szabó Levente</author>
+    <link>https://levente.net</link>
+    <file path="catalog/view/theme/default/template/common/header.twig">
+        <operation error="log">
+            <search>
+                <![CDATA[<link href="catalog/view/theme/default/stylesheet/stylesheet.css" rel="stylesheet">]]>
+            </search>
+            <add position="after">
+                <![CDATA[<link href="catalog/view/theme/default/stylesheet/modern.css" rel="stylesheet">]]>
+            </add>
+        </operation>
+    </file>
+</modification>
